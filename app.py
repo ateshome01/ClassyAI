@@ -41,7 +41,7 @@ def recommend():
         ]
     )
 
-    explanation = ai_response.choices[0].message["content"]
+    explanation = ai_response.choices[0].message.content
 
     return jsonify({
         "ranked_professors": ranked,
