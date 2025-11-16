@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Professor Finder</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4a68e8;
+            --secondary: #f2f6fe;
+            --accent: #669df6;
+            --danger: #e74c3c;
+            --text-main: #222b45;
+            --gray: #888fa5;
+            --white: #fff;
+        }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, #e8f0fc 0%, #f5f8ff 80%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+        }
+        .container {
+            background: var(--white);
+            border-radius: 18px;
+            box-shadow: 0 8px 36px 0 rgba(30,62,128,0.10);
+            padding: 40px 36px 32px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 390px;
+            max-width: 95vw;
+        }
+        h2 {
+            margin-bottom: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 0.7px;
+        }
+        p#tagline {
+            margin: 0 0 22px 0;
+            font-size: 1.11em;
+            color: var(--gray);
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+        label {
+            margin: 12px 0 4px 2px;
+            font-size: 15.5px;
+            font-weight: 500;
+            color: var(--text-main);
+            letter-spacing: 0.05em;
+            display: block;
+        }
+        input, textarea {
+            margin-bottom: 8px;
+            padding: 11px 13px;
+            width: 295px;
+            border: 1.5px solid #ced4e3;
+            border-radius: 7px;
+            font-size: 16px;
+            background: var(--secondary);
+            font-family: 'Montserrat', Arial, sans-serif;
+            transition: border 0.19s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: #fafdff;
+        }
+        button {
+            margin-top: 12px;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 17.5px;
+            padding: 9px 0;
+            width: 100%;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: background 0.18s;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            box-shadow: 0 2px 7px rgba(74,104,232,0.04);
+        }
+        button:active,
+        button:focus {
+            background: var(--accent);
+        }
+        button:hover {
+            background: #3550c8;
+        }
+        #results-section {
+            margin-top: 27px;
+            width: 100%;
+            background: var(--secondary);
+            border-radius: 10px;
+            box-shadow: 0 0.5px 4px 0 rgba(74,104,232,0.05);
+            padding: 24px 20px 19px 20px;
+            min-height: 90px;
+            display: none;
+        }
+        #results-section.active {
+            display: block;
+            animation: fadeIn 0.6s;
+        }
+        #results-section .section-header {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: left;
+            margin-bottom: 15px;
+            margin-top: 0;
+            letter-spacing: 0.02em;
+        }
+        .prof-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 0;
+        }
+        .prof-list li {
+            display: flex;
+            align-items: center;
+            background: #fafdff;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-bottom: 9px;
+            color: #23304e;
+            font-weight: 500;
+            box-shadow: 0 0.5px 4px rgba(106,166,255,0.025);
+            position: relative;
+            border-left: 6px solid var(--accent);
+            font-size: 16.2px;
+            transition: background 0.2s;
+        }
+        .prof-list li.rank-1 { 
+            border-color: #FAE100; 
+            background: #fffde7;
+            font-size: 1.07em;
+        }
+        .prof-list li.rank-2 {
+            border-color: #C0C0C0;
+        }
+        .prof-list li.rank-3 {
+            border-color: #CD7F32;
+        }
+        .prof-list li .prof-rank-badge {
+            font-weight: 600;
+            margin-right: 16px;
+            font-size: 1.03em;
+            background: #e7effa;
+            color: var(--primary);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -7px;
+        }
+        .prof-meta {
+            margin-left: auto;
+            font-size: 15px;
+            color: var(--gray);
+            font-style: italic;
+            letter-spacing: 0.01em;
+        }
+        .no-result-msg {
+            color: var(--gray);
+            font-size: 1.03em;
+            padding: 10px 0 0 0;
+        }
+        .error-msg {
+            color: var(--danger);
+            font-size: 1.04em;
+            padding: 10px 0;
+        }
+        .spinner {
+            display: inline-block;
+            width: 31px;
+            height: 31px;
+            border: 3.5px solid #e3e6ee;
+            border-top: 3.5px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .loading-info {
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 1.05em;
+            letter-spacing: 0.03em;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px);}
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 500px){
+            .container { padding: 27px 6vw 17px 6vw; min-width: unset; }
+            input, textarea { width: 60vw; min-width: 136px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Professor Rankings</h2>
+        <p id="tagline">Find the best professors by class &amp; school.</p>
+        <form id="class-form" autocomplete="off">
+            <label for="school">School</label>
+            <input type="text" id="school" name="school" placeholder="e.g. George Mason University" required />
+
+            <label for="classes">Class(es)</label>
+            <input type="text" id="classes" name="classes" placeholder="e.g. CS 211" required />
+
+            <button id="generate-btn" type="submit">Generate Schedule</button>
+        </form>
+        <div id="results-section">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('class-form');
+        const resultsSection = document.getElementById('results-section');
+
+        function showLoading() {
+            resultsSection.innerHTML = `<div class="loading-info"><span class="spinner"></span> Please wait…</div>`;
+            resultsSection.classList.add('active');
+        }
+
+        function showError(msg) {
+            resultsSection.innerHTML = `<div class="error-msg">${msg}</div>`;
+            resultsSection.classList.add('active');
+        }
+
+        function showResults(professors) {
+            if (professors.length > 0) {
+                let html = `<div class="section-header">Top Professors</div><ul class="prof-list">`;
+                professors.slice(0, 3).forEach((prof, idx) => {
+                    const rank = idx + 1;
+                    let medal = '';
+                    if (rank === 1) medal = "🥇";
+                    else if (rank === 2) medal = "🥈";
+                    else if (rank === 3) medal = "🥉";
+                    html += `
+                    <li class="rank-${rank}">
+                        <span class="prof-rank-badge">${medal ? medal : rank}</span>
+                        <span>${prof.name}</span>
+                        <span class="prof-meta">Rating: ${prof.rating ?? 'N/A'}</span>
+                    </li>
+                    `;
+                });
+                html += `</ul>`;
+                resultsSection.innerHTML = html;
+            } else {
+                resultsSection.innerHTML = `<div class="no-result-msg">No professors found for this class.</div>`;
+            }
+            resultsSection.classList.add('active');
+        }
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const school = document.getElementById('school').value.trim();
+            const classes = document.getElementById('classes').value.trim();
+            showLoading();
+
+            try {
+                // Note: Replace '/api/get-professors' with your backend endpoint
+                const response = await fetch('/api/get-professors', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        school: school,
+                        classes: classes
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+
+                // data = { professors: [ {name: "...", rating: ...}, ... ] }
+                if (data.professors && Array.isArray(data.professors)) {
+                    showResults(data.professors);
+                } else {
+                    showResults([]);
+                }
+            } catch (err) {
+                showError("Error fetching data. Please try again later.");
+            }
+        });
+    </script>
+</body>
+</html>
+
