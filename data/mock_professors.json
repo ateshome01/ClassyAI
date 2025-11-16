@@ -131,7 +131,53 @@
           "reviews": ["Powerful content", "Excellent discussions"]
         }
       ]
-    }
+    },
+    "George Mason University": {
+  "CS 101":[{"name":"Dr. Amanda Lee","rating":4.5,"difficulty":3.2,"reviews":["Very approachable professor","Assignments are challenging but fair"]},{"name":"Prof. Brian Foster","rating":3.8,"difficulty":4.0,"reviews":["Lectures are okay but exams are tough","Sometimes confusing explanations"]},{"name":"Dr. Catherine Nguyen","rating":4.1,"difficulty":3.5,"reviews":["Engaging lectures","Grading is strict"]}],
+  "CS 201":[{"name":"Dr. Samuel Ortiz","rating":3.6,"difficulty":4.1,"reviews":["Challenging midterm","Lectures a bit rushed"]},{"name":"Prof. Emily Davis","rating":4.2,"difficulty":3.7,"reviews":["Great examples","Helpful office hours"]}],
+  "CS 301":[{"name":"Dr. Jordan Kim","rating":3.3,"difficulty":4.5,"reviews":["Very hard projects","Lectures hard to follow"]},{"name":"Prof. Megan Lewis","rating":3.8,"difficulty":4.2,"reviews":["Good explanations but tough grading"]}],
+  "ENGR 210":[{"name":"Dr. Derek Chen","rating":3.2,"difficulty":4.5,"reviews":["Very difficult homework","Lectures hard to follow"]},{"name":"Prof. Fiona Patel","rating":2.9,"difficulty":4.8,"reviews":["Not very helpful","Exams are brutal"]},{"name":"Dr. George Liu","rating":3.5,"difficulty":4.2,"reviews":["Challenging course, requires strong background","Helpful in office hours"]}],
+  "ENGR 310":[{"name":"Dr. Alice Young","rating":3.0,"difficulty":4.7,"reviews":["Exams very tough","Lectures not very clear"]},{"name":"Prof. Brian Zhang","rating":3.6,"difficulty":4.4,"reviews":["Heavy workload","Good if you ask questions"]}],
+  "MATH 101":[{"name":"Dr. Rachel Adams","rating":4.5,"difficulty":3.2,"reviews":["Helpful explanations","Exams fair"]},{"name":"Prof. Samuel Carter","rating":3.4,"difficulty":3.8,"reviews":["Course is challenging","Lectures fast-paced"]}],
+  "MATH 200":[{"name":"Prof. Daniel Brooks","rating":4.0,"difficulty":3.8,"reviews":["Good professor but tough grading","Helpful if you go to office hours"]},{"name":"Dr. Emily Scott","rating":3.5,"difficulty":3.2,"reviews":["Course is confusing","Exams are tricky"]},{"name":"Prof. Henry White","rating":4.2,"difficulty":3.0,"reviews":["Very clear explanations","Assignments are fair"]}],
+  "PHYS 101":[{"name":"Dr. Ian Rodriguez","rating":3.9,"difficulty":4.0,"reviews":["Lectures are engaging","Exams are long"]},{"name":"Prof. Julia Kim","rating":3.2,"difficulty":4.5,"reviews":["Difficult problem sets","Labs are tough to manage"]}],
+  "PHYS 201":[{"name":"Dr. Victor Li","rating":3.5,"difficulty":4.3,"reviews":["Challenging course","Exams very tough"]},{"name":"Prof. Angela Torres","rating":3.0,"difficulty":4.7,"reviews":["Labs are time-consuming","Lectures are fast"]}],
+  "ECON 101":[{"name":"Dr. Kevin Brown","rating":4.6,"difficulty":3.2,"reviews":["Very clear explanations","Lectures are interactive"]},{"name":"Prof. Laura Perez","rating":3.7,"difficulty":3.5,"reviews":["Lectures can be dry","Exams are fair but tricky"]}],
+  "ECON 201":[{"name":"Dr. Olivia Torres","rating":4.3,"difficulty":3.6,"reviews":["Interactive lectures","Assignments fair"]},{"name":"Prof. Paul Reed","rating":3.7,"difficulty":3.8,"reviews":["Lectures are dry","Exams are hard but fair"]}],
+  "HIST 101":[{"name":"Dr. Maria Gonzalez","rating":4.8,"difficulty":2.8,"reviews":["Engaging storytelling","Assignments easy to manage"]},{"name":"Prof. Nathan Carter","rating":3.6,"difficulty":3.0,"reviews":["Lectures are okay","Some grading seems harsh"]}],
+  "HIST 210":[{"name":"Dr. Noah Wright","rating":4.2,"difficulty":3.0,"reviews":["Interesting content","Lectures could be more engaging"]},{"name":"Prof. Olivia King","rating":3.3,"difficulty":3.5,"reviews":["Lectures slow-paced","Grading harsh sometimes"]}]
+},
+"Virginia Tech":{
+  "CS 101":[{"name":"Dr. Frank Peterson","rating":4.8,"difficulty":3.7,"reviews":["Amazing explanations","Very interactive lectures"]},{"name":"Prof. Grace Li","rating":3.9,"difficulty":4.0,"reviews":["Tough course, lectures not always clear","Assignments are long"]},{"name":"Dr. Hannah White","rating":4.2,"difficulty":3.8,"reviews":["Good balance of theory and practice","Helpful professor"]}],
+  "CS 201":[{"name":"Dr. Ian Moore","rating":3.5,"difficulty":4.2,"reviews":["Midterms challenging","Lectures rushed"]},{"name":"Prof. Julia Carter","rating":4.0,"difficulty":3.9,"reviews":["Good explanations","Helpful office hours"]}],
+  "CS 301":[{"name":"Dr. Henry Adams","rating":3.2,"difficulty":4.5,"reviews":["Very challenging course","Lectures are fast-paced"]},{"name":"Prof. Isabella Cruz","rating":3.5,"difficulty":4.2,"reviews":["Good content but grading is harsh","Helpful only in office hours"]}],
+  "PHYS 201":[{"name":"Dr. Jonathan White","rating":4.6,"difficulty":4.1,"reviews":["Tough course but well taught","Labs are very detailed"]},{"name":"Prof. Karen Martinez","rating":2.8,"difficulty":4.7,"reviews":["Lectures are confusing","Exams are unfairly hard"]}],
+  "MATH 220":[{"name":"Dr. Lucas Green","rating":3.5,"difficulty":4.0,"reviews":["Course is tough","Exams require strong preparation"]},{"name":"Prof. Megan Lopez","rating":4.1,"difficulty":3.5,"reviews":["Good professor","Assignments are manageable"]}],
+  "ECON 201":[{"name":"Dr. Nathaniel Adams","rating":4.4,"difficulty":3.5,"reviews":["Lectures engaging","Assignments fair"]},{"name":"Prof. Patricia Collins","rating":3.6,"difficulty":3.7,"reviews":["Lectures dry","Exams challenging"]}],
+  "ENGR 310":[{"name":"Dr. Quentin Hall","rating":3.0,"difficulty":4.6,"reviews":["Very tough course","Lectures fast-paced"]},{"name":"Prof. Rebecca Simmons","rating":3.5,"difficulty":4.4,"reviews":["Difficult assignments","Helpful if you attend office hours"]}]
+},
+"University of Maryland":{
+  "CS 101":[{"name":"Dr. Jack Thompson","rating":4.7,"difficulty":3.3,"reviews":["Very approachable","Assignments reinforce learning"]},{"name":"Prof. Kelly Morgan","rating":3.6,"difficulty":4.0,"reviews":["Lectures hard to follow","Grading is strict"]}],
+  "CS 250":[{"name":"Dr. Lucas Bennett","rating":3.4,"difficulty":4.5,"reviews":["Course is very challenging","Projects take a lot of time"]},{"name":"Prof. Megan Clark","rating":3.9,"difficulty":4.2,"reviews":["Good explanations but workload heavy","Helpful in labs"]}],
+  "ECON 101":[{"name":"Dr. Liam Rodriguez","rating":4.8,"difficulty":3.4,"reviews":["Engaging lectures","Helpful with exam prep"]},{"name":"Prof. Mia Patel","rating":4.1,"difficulty":3.2,"reviews":["Clear explanations","Somewhat dry lectures"]}],
+  "HIST 210":[{"name":"Dr. Noah Wright","rating":4.2,"difficulty":3.0,"reviews":["Interesting content","Lectures could be more engaging"]},{"name":"Prof. Olivia King","rating":3.3,"difficulty":3.5,"reviews":["Lectures slow-paced","Grading harsh sometimes"]}],
+  "PHYS 150":[{"name":"Dr. Patrick Young","rating":3.5,"difficulty":4.1,"reviews":["Tough labs","Lectures require concentration"]},{"name":"Prof. Quinn Allen","rating":3.0,"difficulty":4.5,"reviews":["Very difficult course","Exams very challenging"]}]
+},
+"William & Mary":{
+  "HIST 101":[{"name":"Dr. Nathaniel Harris","rating":4.9,"difficulty":3.1,"reviews":["Fascinating stories","Makes history come alive"]},{"name":"Prof. Olivia Martinez","rating":3.7,"difficulty":3.5,"reviews":["Lectures are okay","Grading can be harsh"]}],
+  "CS 150":[{"name":"Dr. Patrick Chen","rating":4.2,"difficulty":4.0,"reviews":["Clear explanations","Course is challenging"]},{"name":"Prof. Quinn Lewis","rating":2.9,"difficulty":4.5,"reviews":["Very difficult course","Lectures are confusing at times"]}],
+  "MATH 101":[{"name":"Dr. Rachel Adams","rating":4.5,"difficulty":3.2,"reviews":["Helpful explanations","Exams fair"]},{"name":"Prof. Samuel Carter","rating":3.4,"difficulty":3.8,"reviews":["Course is challenging","Lectures fast-paced"]}],
+  "ECON 101":[{"name":"Dr. Teresa Mitchell","rating":4.6,"difficulty":3.0,"reviews":["Engaging lectures","Helpful office hours"]},{"name":"Prof. Victor Lewis","rating":3.5,"difficulty":3.5,"reviews":["Lectures can be dry","Assignments are tricky"]}],
+  "PHYS 101":[{"name":"Dr. Wendy Hughes","rating":3.8,"difficulty":4.0,"reviews":["Challenging but fair","Labs are time-consuming"]},{"name":"Prof. Xavier Bell","rating":3.0,"difficulty":4.5,"reviews":["Very difficult exams","Lectures fast and dense"]}]
+},
+"University of Virginia":{
+  "CS 101":[{"name":"Dr. Rachel Kim","rating":4.8,"difficulty":3.6,"reviews":["Excellent explanations","Very approachable"]},{"name":"Prof. Samuel Wright","rating":3.4,"difficulty":4.3,"reviews":["Lectures are fast-paced","Homework is tough"]}],
+  "MATH 200":[{"name":"Dr. Teresa White","rating":4.9,"difficulty":4.0,"reviews":["Amazing professor","Tests are challenging but fair"]},{"name":"Prof. Victor Allen","rating":3.1,"difficulty":4.2,"reviews":["Course is confusing","Exams are very difficult"]}],
+  "ENGR 310":[{"name":"Dr. William Ross","rating":2.8,"difficulty":4.8,"reviews":["Very tough assignments","Not very helpful in class"]},{"name":"Prof. Yvonne Turner","rating":3.5,"difficulty":4.5,"reviews":["Difficult course but teaches well","Lectures are long"]}],
+  "PHYS 301":[{"name":"Dr. Zachary Evans","rating":3.2,"difficulty":4.6,"reviews":["Labs very challenging","Exams tricky"]},{"name":"Prof. Abigail Morris","rating":4.4,"difficulty":4.0,"reviews":["Tough course but explained well","Helpful professor"]}],
+  "ECON 201":[{"name":"Dr. Benjamin Hill","rating":4.6,"difficulty":3.5,"reviews":["Engaging content","Assignments fair"]},{"name":"Prof. Charlotte Gray","rating":3.5,"difficulty":3.8,"reviews":["Lectures dry at times","Exams are challenging"]}]
+}
+
   }
 }
 
