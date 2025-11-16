@@ -1,0 +1,212 @@
+[
+    {
+        "name": "Dr. Sarah Thompson",
+        "course": "CS 101",
+        "rating": 4.9,
+        "difficulty": 2.1,
+        "reviews": 128
+    },
+    {
+        "name": "Prof. Daniel Murray",
+        "course": "CS 112",
+        "rating": 4.7,
+        "difficulty": 2.8,
+        "reviews": 94
+    },
+    {
+        "name": "Dr. Emily Carter",
+        "course": "CS 262",
+        "rating": 4.8,
+        "difficulty": 3.2,
+        "reviews": 87
+    },
+    {
+        "name": "Prof. Justin Blake",
+        "course": "CS 310",
+        "rating": 4.6,
+        "difficulty": 3.0,
+        "reviews": 110
+    },
+    {
+        "name": "Dr. Aisha Nguyen",
+        "course": "CS 330",
+        "rating": 4.9,
+        "difficulty": 2.4,
+        "reviews": 145
+    },
+    {
+        "name": "Dr. Kevin Liu",
+        "course": "CS 367",
+        "rating": 4.5,
+        "difficulty": 3.5,
+        "reviews": 98
+    },
+    {
+        "name": "Prof. Megan Patel",
+        "course": "CS 471",
+        "rating": 4.8,
+        "difficulty": 2.9,
+        "reviews": 76
+    },
+    {
+        "name": "Dr. Anthony Williams",
+        "course": "MATH 113",
+        "rating": 4.6,
+        "difficulty": 2.7,
+        "reviews": 122
+    },
+    {
+        "name": "Prof. Rachel Kim",
+        "course": "MATH 114",
+        "rating": 4.7,
+        "difficulty": 3.1,
+        "reviews": 111
+    },
+    {
+        "name": "Dr. Samuel Ortiz",
+        "course": "MATH 125",
+        "rating": 4.4,
+        "difficulty": 3.8,
+        "reviews": 89
+    },
+    {
+        "name": "Prof. Olivia Johnson",
+        "course": "ENGH 101",
+        "rating": 4.9,
+        "difficulty": 2.0,
+        "reviews": 133
+    },
+    {
+        "name": "Dr. Paul Richards",
+        "course": "ENGH 302",
+        "rating": 4.5,
+        "difficulty": 3.2,
+        "reviews": 77
+    },
+    {
+        "name": "Prof. Hannah Greene",
+        "course": "PHYS 160",
+        "rating": 4.3,
+        "difficulty": 3.9,
+        "reviews": 102
+    },
+    {
+        "name": "Dr. Michael Russo",
+        "course": "PHYS 260",
+        "rating": 4.2,
+        "difficulty": 4.0,
+        "reviews": 85
+    },
+    {
+        "name": "Prof. Laura Bennett",
+        "course": "CHEM 211",
+        "rating": 4.1,
+        "difficulty": 4.2,
+        "reviews": 90
+    },
+    {
+        "name": "Dr. Jason Park",
+        "course": "CHEM 212",
+        "rating": 4.3,
+        "difficulty": 4.0,
+        "reviews": 73
+    },
+    {
+        "name": "Prof. Emily Rhodes",
+        "course": "BIOL 213",
+        "rating": 4.8,
+        "difficulty": 2.6,
+        "reviews": 121
+    },
+    {
+        "name": "Dr. Nathan Ellis",
+        "course": "BIOL 214",
+        "rating": 4.5,
+        "difficulty": 3.3,
+        "reviews": 95
+    },
+    {
+        "name": "Prof. Diana Flores",
+        "course": "HIST 100",
+        "rating": 4.9,
+        "difficulty": 1.8,
+        "reviews": 154
+    },
+    {
+        "name": "Dr. Ethan Walsh",
+        "course": "HIST 125",
+        "rating": 4.6,
+        "difficulty": 2.4,
+        "reviews": 132
+    },
+    {
+        "name": "Prof. Sofia Martinez",
+        "course": "PSYC 100",
+        "rating": 4.8,
+        "difficulty": 2.2,
+        "reviews": 169
+    },
+    {
+        "name": "Dr. Jacob Reed",
+        "course": "PSYC 211",
+        "rating": 4.4,
+        "difficulty": 3.4,
+        "reviews": 88
+    },
+    {
+        "name": "Prof. Lily Henderson",
+        "course": "ECON 103",
+        "rating": 4.7,
+        "difficulty": 2.9,
+        "reviews": 143
+    },
+    {
+        "name": "Dr. Marcus Chen",
+        "course": "ECON 104",
+        "rating": 4.5,
+        "difficulty": 3.5,
+        "reviews": 91
+    },
+    {
+        "name": "Prof. Jenna Collins",
+        "course": "COMM 100",
+        "rating": 4.9,
+        "difficulty": 1.9,
+        "reviews": 172
+    },
+    {
+        "name": "Dr. Victor Hale",
+        "course": "COMM 101",
+        "rating": 4.6,
+        "difficulty": 2.7,
+        "reviews": 104
+    },
+    {
+        "name": "Prof. Aaron Lewis",
+        "course": "ARTS 120",
+        "rating": 4.8,
+        "difficulty": 1.5,
+        "reviews": 156
+    },
+    {
+        "name": "Dr. Priya Raman",
+        "course": "PHIL 173",
+        "rating": 4.7,
+        "difficulty": 2.4,
+        "reviews": 119
+    },
+    {
+        "name": "Prof. Henry Dalton",
+        "course": "STAT 250",
+        "rating": 4.6,
+        "difficulty": 2.9,
+        "reviews": 131
+    },
+    {
+        "name": "Dr. Tiana Brooks",
+        "course": "STAT 260",
+        "rating": 4.4,
+        "difficulty": 3.6,
+        "reviews": 92
+    }
+]
