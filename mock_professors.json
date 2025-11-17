@@ -1,5 +1,6 @@
 [
     {
+        "university": "George Mason University",
         "name": "Dr. Sarah Thompson",
         "course": "CS 101",
         "rating": 4.9,
@@ -7,6 +8,7 @@
         "reviews": 128
     },
     {
+        "university": "George Mason University",
         "name": "Prof. Daniel Murray",
         "course": "CS 112",
         "rating": 4.7,
@@ -14,6 +16,7 @@
         "reviews": 94
     },
     {
+        "university": "George Mason University",
         "name": "Dr. Emily Carter",
         "course": "CS 262",
         "rating": 4.8,
@@ -21,6 +24,7 @@
         "reviews": 87
     },
     {
+        "university": "George Mason University",
         "name": "Prof. Justin Blake",
         "course": "CS 310",
         "rating": 4.6,
@@ -28,6 +32,7 @@
         "reviews": 110
     },
     {
+        "university": "George Mason University",
         "name": "Dr. Aisha Nguyen",
         "course": "CS 330",
         "rating": 4.9,
@@ -35,6 +40,7 @@
         "reviews": 145
     },
     {
+        "university": "George Mason University",
         "name": "Dr. Kevin Liu",
         "course": "CS 367",
         "rating": 4.5,
@@ -42,6 +48,7 @@
         "reviews": 98
     },
     {
+        "university": "George Mason University",
         "name": "Prof. Megan Patel",
         "course": "CS 471",
         "rating": 4.8,
@@ -49,164 +56,371 @@
         "reviews": 76
     },
     {
+        "university": "University of Virginia",
         "name": "Dr. Anthony Williams",
-        "course": "MATH 113",
-        "rating": 4.6,
-        "difficulty": 2.7,
-        "reviews": 122
-    },
-    {
-        "name": "Prof. Rachel Kim",
-        "course": "MATH 114",
-        "rating": 4.7,
-        "difficulty": 3.1,
-        "reviews": 111
-    },
-    {
-        "name": "Dr. Samuel Ortiz",
-        "course": "MATH 125",
-        "rating": 4.4,
-        "difficulty": 3.8,
-        "reviews": 89
-    },
-    {
-        "name": "Prof. Olivia Johnson",
-        "course": "ENGH 101",
-        "rating": 4.9,
-        "difficulty": 2.0,
-        "reviews": 133
-    },
-    {
-        "name": "Dr. Paul Richards",
-        "course": "ENGH 302",
-        "rating": 4.5,
-        "difficulty": 3.2,
-        "reviews": 77
-    },
-    {
-        "name": "Prof. Hannah Greene",
-        "course": "PHYS 160",
-        "rating": 4.3,
-        "difficulty": 3.9,
-        "reviews": 102
-    },
-    {
-        "name": "Dr. Michael Russo",
-        "course": "PHYS 260",
-        "rating": 4.2,
-        "difficulty": 4.0,
-        "reviews": 85
-    },
-    {
-        "name": "Prof. Laura Bennett",
-        "course": "CHEM 211",
-        "rating": 4.1,
-        "difficulty": 4.2,
-        "reviews": 90
-    },
-    {
-        "name": "Dr. Jason Park",
-        "course": "CHEM 212",
-        "rating": 4.3,
-        "difficulty": 4.0,
-        "reviews": 73
-    },
-    {
-        "name": "Prof. Emily Rhodes",
-        "course": "BIOL 213",
+        "course": "MATH 1130",
         "rating": 4.8,
         "difficulty": 2.6,
-        "reviews": 121
+        "reviews": 201
     },
     {
-        "name": "Dr. Nathan Ellis",
-        "course": "BIOL 214",
-        "rating": 4.5,
-        "difficulty": 3.3,
-        "reviews": 95
+        "university": "University of Virginia",
+        "name": "Prof. Rachel Kim",
+        "course": "MATH 1220",
+        "rating": 4.7,
+        "difficulty": 3.1,
+        "reviews": 167
     },
     {
-        "name": "Prof. Diana Flores",
-        "course": "HIST 100",
-        "rating": 4.9,
-        "difficulty": 1.8,
+        "university": "University of Virginia",
+        "name": "Dr. Samuel Ortiz",
+        "course": "PHYS 1420",
+        "rating": 4.4,
+        "difficulty": 3.9,
         "reviews": 154
     },
     {
-        "name": "Dr. Ethan Walsh",
-        "course": "HIST 125",
-        "rating": 4.6,
-        "difficulty": 2.4,
-        "reviews": 132
+        "university": "University of Virginia",
+        "name": "Prof. Olivia Johnson",
+        "course": "ENWR 1510",
+        "rating": 4.9,
+        "difficulty": 2.0,
+        "reviews": 189
     },
     {
+        "university": "Virginia Tech",
+        "name": "Dr. Paul Richards",
+        "course": "ENGL 1106",
+        "rating": 4.6,
+        "difficulty": 3.0,
+        "reviews": 142
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Prof. Hannah Greene",
+        "course": "PHYS 2305",
+        "rating": 4.3,
+        "difficulty": 3.9,
+        "reviews": 121
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Dr. Michael Russo",
+        "course": "CHEM 1035",
+        "rating": 4.2,
+        "difficulty": 4.0,
+        "reviews": 160
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Prof. Jason Park",
+        "course": "CHEM 1036",
+        "rating": 4.3,
+        "difficulty": 4.0,
+        "reviews": 133
+    },
+    {
+        "university": "James Madison University",
+        "name": "Prof. Emily Rhodes",
+        "course": "BIO 140",
+        "rating": 4.8,
+        "difficulty": 2.6,
+        "reviews": 141
+    },
+    {
+        "university": "James Madison University",
+        "name": "Dr. Nathan Ellis",
+        "course": "BIO 270",
+        "rating": 4.5,
+        "difficulty": 3.3,
+        "reviews": 122
+    },
+    {
+        "university": "James Madison University",
+        "name": "Prof. Diana Flores",
+        "course": "HIST 225",
+        "rating": 4.9,
+        "difficulty": 1.8,
+        "reviews": 201
+    },
+    {
+        "university": "James Madison University",
+        "name": "Dr. Ethan Walsh",
+        "course": "HIST 102",
+        "rating": 4.6,
+        "difficulty": 2.4,
+        "reviews": 156
+    },
+    {
+        "university": "Liberty University",
         "name": "Prof. Sofia Martinez",
-        "course": "PSYC 100",
+        "course": "PSYC 101",
         "rating": 4.8,
         "difficulty": 2.2,
         "reviews": 169
     },
     {
+        "university": "Liberty University",
         "name": "Dr. Jacob Reed",
-        "course": "PSYC 211",
+        "course": "PSYC 210",
         "rating": 4.4,
         "difficulty": 3.4,
-        "reviews": 88
+        "reviews": 144
     },
     {
+        "university": "Liberty University",
         "name": "Prof. Lily Henderson",
-        "course": "ECON 103",
+        "course": "BUSI 201",
         "rating": 4.7,
         "difficulty": 2.9,
-        "reviews": 143
+        "reviews": 153
     },
     {
+        "university": "Old Dominion University",
         "name": "Dr. Marcus Chen",
-        "course": "ECON 104",
+        "course": "ECON 202",
         "rating": 4.5,
-        "difficulty": 3.5,
-        "reviews": 91
+        "difficulty": 3.4,
+        "reviews": 122
     },
     {
+        "university": "Old Dominion University",
         "name": "Prof. Jenna Collins",
-        "course": "COMM 100",
+        "course": "COMM 101R",
         "rating": 4.9,
         "difficulty": 1.9,
-        "reviews": 172
+        "reviews": 210
     },
     {
+        "university": "Old Dominion University",
         "name": "Dr. Victor Hale",
-        "course": "COMM 101",
+        "course": "COMM 112R",
         "rating": 4.6,
         "difficulty": 2.7,
-        "reviews": 104
+        "reviews": 134
     },
     {
+        "university": "Christopher Newport University",
         "name": "Prof. Aaron Lewis",
-        "course": "ARTS 120",
+        "course": "ART 200",
         "rating": 4.8,
         "difficulty": 1.5,
         "reviews": 156
     },
     {
+        "university": "Christopher Newport University",
         "name": "Dr. Priya Raman",
-        "course": "PHIL 173",
+        "course": "PHIL 201",
         "rating": 4.7,
         "difficulty": 2.4,
         "reviews": 119
     },
     {
+        "university": "Christopher Newport University",
         "name": "Prof. Henry Dalton",
-        "course": "STAT 250",
+        "course": "MATH 217",
         "rating": 4.6,
         "difficulty": 2.9,
         "reviews": 131
     },
     {
+        "university": "Christopher Newport University",
         "name": "Dr. Tiana Brooks",
-        "course": "STAT 260",
+        "course": "STAT 250",
         "rating": 4.4,
         "difficulty": 3.6,
         "reviews": 92
+    },
+    {
+        "university": "George Mason University",
+        "name": "Dr. Laura Bennett",
+        "course": "CS 211",
+        "rating": 4.7,
+        "difficulty": 3.1,
+        "reviews": 102
+    },
+    {
+        "university": "George Mason University",
+        "name": "Prof. Xavier Davis",
+        "course": "CS 463",
+        "rating": 4.5,
+        "difficulty": 3.4,
+        "reviews": 88
+    },
+    {
+        "university": "University of Virginia",
+        "name": "Dr. Helena Fischer",
+        "course": "CS 2150",
+        "rating": 4.8,
+        "difficulty": 3.7,
+        "reviews": 173
+    },
+    {
+        "university": "University of Virginia",
+        "name": "Prof. Quentin Hayes",
+        "course": "STAT 1601",
+        "rating": 4.6,
+        "difficulty": 2.8,
+        "reviews": 140
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Dr. Sabrina Cole",
+        "course": "MATH 1225",
+        "rating": 4.4,
+        "difficulty": 3.9,
+        "reviews": 210
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Prof. Elliot Brooks",
+        "course": "CS 1114",
+        "rating": 4.7,
+        "difficulty": 3.0,
+        "reviews": 198
+    },
+    {
+        "university": "James Madison University",
+        "name": "Dr. Karen Wallace",
+        "course": "GEOG 200",
+        "rating": 4.9,
+        "difficulty": 1.7,
+        "reviews": 155
+    },
+    {
+        "university": "James Madison University",
+        "name": "Prof. Brian Holloway",
+        "course": "ISAT 160",
+        "rating": 4.6,
+        "difficulty": 2.5,
+        "reviews": 132
+    },
+    {
+        "university": "Liberty University",
+        "name": "Dr. Selena Marsh",
+        "course": "THEO 201",
+        "rating": 4.8,
+        "difficulty": 2.3,
+        "reviews": 187
+    },
+    {
+        "university": "Liberty University",
+        "name": "Prof. Connor Blake",
+        "course": "ENGR 110",
+        "rating": 4.5,
+        "difficulty": 3.2,
+        "reviews": 101
+    },
+    {
+        "university": "Old Dominion University",
+        "name": "Dr. Valerie Kent",
+        "course": "CS 150",
+        "rating": 4.6,
+        "difficulty": 3.3,
+        "reviews": 117
+    },
+    {
+        "university": "Old Dominion University",
+        "name": "Prof. Derek Frost",
+        "course": "MATH 102M",
+        "rating": 4.3,
+        "difficulty": 3.8,
+        "reviews": 128
+    },
+    {
+        "university": "Christopher Newport University",
+        "name": "Dr. Eleanor Shaw",
+        "course": "BIO 107",
+        "rating": 4.7,
+        "difficulty": 2.6,
+        "reviews": 149
+    },
+    {
+        "university": "Christopher Newport University",
+        "name": "Prof. Marcus Avery",
+        "course": "CHEM 103",
+        "rating": 4.4,
+        "difficulty": 3.5,
+        "reviews": 121
+    },
+    {
+        "university": "George Mason University",
+        "name": "Prof. Ethan Caldwell",
+        "course": "IT 106",
+        "rating": 4.6,
+        "difficulty": 2.5,
+        "reviews": 142
+    },
+    {
+        "university": "George Mason University",
+        "name": "Dr. Marissa Shaw",
+        "course": "IT 206",
+        "rating": 4.8,
+        "difficulty": 2.9,
+        "reviews": 121
+    },
+    {
+        "university": "University of Virginia",
+        "name": "Prof. Jordan Ellis",
+        "course": "CS 1110",
+        "rating": 4.7,
+        "difficulty": 3.0,
+        "reviews": 210
+    },
+    {
+        "university": "University of Virginia",
+        "name": "Dr. Natalie Pierce",
+        "course": "SOC 1010",
+        "rating": 4.9,
+        "difficulty": 2.2,
+        "reviews": 188
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Prof. Amanda Fox",
+        "course": "ENGL 1105",
+        "rating": 4.6,
+        "difficulty": 2.7,
+        "reviews": 174
+    },
+    {
+        "university": "Virginia Tech",
+        "name": "Dr. Lucas Ramirez",
+        "course": "STAT 3615",
+        "rating": 4.4,
+        "difficulty": 3.8,
+        "reviews": 129
+    },
+    {
+        "university": "James Madison University",
+        "name": "Prof. Caroline Webb",
+        "course": "PSYC 101",
+        "rating": 4.8,
+        "difficulty": 2.3,
+        "reviews": 201
+    },
+    {
+        "university": "James Madison University",
+        "name": "Dr. Oliver Grant",
+        "course": "MATH 205",
+        "rating": 4.5,
+        "difficulty": 3.4,
+        "reviews": 143
+    },
+    {
+        "university": "Liberty University",
+        "name": "Prof. Hannah Scott",
+        "course": "CJUS 200",
+        "rating": 4.7,
+        "difficulty": 2.6,
+        "reviews": 167
+    },
+    {
+        "university": "Liberty University",
+        "name": "Dr. Trevor Young",
+        "course": "MATH 201",
+        "rating": 4.6,
+        "difficulty": 3.1,
+        "reviews": 132
     }
 ]
