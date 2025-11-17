@@ -18,27 +18,29 @@ with open("data/mock_professors.json", "r") as file:
 @app.route("/recommend", methods=["POST"])
 def recommend():
     data = request.json
+    uni_name = data.get("university")  # University name from frontend
+    user_courses = data.get("courses", [])  # List of courses
 
-    user_university = data.get("university", "").strip()
-    user_courses = data.get("courses", [])
+    matches = []
 
-    # Filter by university first
-    uni_matches = [p for p in professors if p["university"].lower()
-                   == user_university.lower()]
+    if uni_name and uni_name in professors["universities"]:
+        uni_courses = professors["universities"][uni_name]
+        for course_name in user_courses:
+            if course_name in uni_courses:
+                for prof in uni_courses[course_name]:
+                    prof_copy = prof.copy()
+                    prof_copy["course"] = course_name
+                    prof_copy["university"] = uni_name
+                    matches.append(prof_copy)
 
-    if not uni_matches:
-        return jsonify({"error": "No professors found for that university"}), 400
+    if not matches:
+        return jsonify({"error": "No professors found for those classes"}), 400
 
-    # Now filter by courses *within* the matched university
-    course_matches = [p for p in uni_matches if p["course"] in user_courses]
+    # Sort professors by rating (highest first)
+    ranked = sorted(matches, key=lambda x: x["rating"], reverse=True)
 
-    if not course_matches:
-        return jsonify({"error": "No professors found for those classes at this university"}), 400
-
-    ranked = sorted(course_matches, key=lambda x: x["rating"], reverse=True)
-
-    # AI explanation
-    prompt = f"Explain why these professors at {user_university} are recommended: {ranked}"
+    # AI explanation prompt
+    prompt = f"Explain why these professors are recommended: {ranked}"
 
     ai_response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -48,12 +50,15 @@ def recommend():
         ]
     )
 
-    explanation = ai_response.choices[0].message.content  # FIXED
+    explanation = getattr(ai_response.choices[0].message, "content", "")
 
     return jsonify({
         "ranked_professors": ranked,
         "ai_explanation": explanation
     })
+
+
+
 
 
 if __name__ == "__main__":
