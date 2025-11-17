@@ -18,20 +18,27 @@ with open("data/mock_professors.json", "r") as file:
 @app.route("/recommend", methods=["POST"])
 def recommend():
     data = request.json
+
+    user_university = data.get("university", "").strip()
     user_courses = data.get("courses", [])
 
-    # Filter professors that match classes
-    matches = [p for p in professors if p["course"] in user_courses]
+    # Filter by university first
+    uni_matches = [p for p in professors if p["university"].lower()
+                   == user_university.lower()]
 
-    # If no match found
-    if not matches:
-        return jsonify({"error": "No professors found for those classes"}), 400
+    if not uni_matches:
+        return jsonify({"error": "No professors found for that university"}), 400
 
-    # Sort best → worst
-    ranked = sorted(matches, key=lambda x: x["rating"], reverse=True)
+    # Now filter by courses *within* the matched university
+    course_matches = [p for p in uni_matches if p["course"] in user_courses]
+
+    if not course_matches:
+        return jsonify({"error": "No professors found for those classes at this university"}), 400
+
+    ranked = sorted(course_matches, key=lambda x: x["rating"], reverse=True)
 
     # AI explanation
-    prompt = f"Explain why these professors are recommended: {ranked}"
+    prompt = f"Explain why these professors at {user_university} are recommended: {ranked}"
 
     ai_response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -41,7 +48,7 @@ def recommend():
         ]
     )
 
-    explanation = ai_response.choices[0].message.content
+    explanation = ai_response.choices[0].message.content  # FIXED
 
     return jsonify({
         "ranked_professors": ranked,
