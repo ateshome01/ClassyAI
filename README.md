@@ -89,27 +89,21 @@ Uses simple fetch() calls to connect to the backend.
 
 👥 Team Roles
 
-Person A — Backend Lead (Gabe)
-	•	Built Flask API
-	•	Connected professor dataset
-	•	Added ranking logic
-	•	Integrated OpenAI for explanations
-	•	Tested endpoint with Thunder Client
+Backend
+	•	Flask API
+	•	Professor dataset
+	•	Ranking logic
+	•	OpenAI for explanations
+	•	Endpoint with Thunder Client
 
-Person B — Frontend Lead
-	•	Built HTML/CSS/JS UI
-	•	Handled fetch() request to backend
-	•	Styled output & layout
+Frontend
+	•	HTML/CSS/JS UI
+	•	Fetch() request to backend
+	•	Output & layout
 
-Person C — Integrator
-	•	Connected frontend ↔ backend
-	•	Ran end-to-end tests
-	•	Debugged JSON/CORS issues
-
-Person D — Dataset + UX
-	•	Created mock_professors.json
-	•	Wrote UI text, tested flows
-	•	Helped with README + presentation
+Dataset + UX
+	•	mock_professors.json
+	•	UI text, tested flows
 
 ⸻
 
