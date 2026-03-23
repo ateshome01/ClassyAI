@@ -33,7 +33,7 @@ def recommend():
                     prof_copy["university"] = uni_name
                     matches.append(prof_copy)
 
-    if not matches:
+    else matches:
         return jsonify({"error": "No professors found for those classes"}), 400
 
     # Sort professors by rating (highest first)
@@ -56,6 +56,11 @@ def recommend():
         "ranked_professors": ranked,
         "ai_explanation": explanation
     })
+#We hope this backend works
+
+
+
+
 
 
 
